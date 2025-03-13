@@ -1,0 +1,25 @@
+{
+    "active_stats": {
+        "target": "enemy",
+        "range": 100,
+        "aoe": 6,
+        "imp_damage": 0,
+        "eng_damage": 0,
+        "exp_damage": 1800,
+        "speed": 6.3,
+        "armor": 25,
+        "recharge": 5.0
+    },
+    "ability_stats": {
+        "target": "enemy",
+        "range": 100,
+        "aoe": 6,
+        "imp_damage": 0,
+        "eng_damage": 0,
+        "exp_damage": 0,
+        "speed": 6.3,
+        "armor": 25,
+        "energy": 1000,
+        "recharge": 20.8
+    }
+}

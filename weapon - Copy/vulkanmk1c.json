@@ -1,0 +1,29 @@
+{
+    "active_stats": {
+        "target": "enemy",
+        "range": 70,
+        "aoe": 0,
+        "damage_type": "impact",
+        "damage": 350,
+        "projectile_count": 0,
+        "speed": 16.1,
+        "armor": 0,
+        "recharge": 1.7,
+        "armor_damage": 0,
+        "shield_damage": 0
+    },
+    "ability_stats": {
+        "target": "enemy",
+        "range": 70,
+        "aoe": 0,
+        "damage_type": "impact",
+        "damage": 420,
+        "projectile_count": 6,
+        "speed": 16.1,
+        "armor": 0,
+        "energy": 500,
+        "recharge": 16.7,
+        "armor_damage": 0,
+        "shield_damage": 0
+    }
+}

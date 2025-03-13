@@ -1,0 +1,29 @@
+{
+    "active_stats": {
+        "target": "self",
+        "range": 0,
+        "aoe": 35,
+        "damage_type": "energy",
+        "damage": 8400,
+        "projectile_count": 0,
+        "speed": 0,
+        "armor": 0,
+        "recharge": 10.0,
+        "armor_damage": 0,
+        "shield_damage": 0
+    },
+    "ability_stats": {
+        "target": "self",
+        "range": 0,
+        "aoe": 35,
+        "damage_type": "energy",
+        "damage": 8400,
+        "projectile_count": 0,
+        "speed": 0,
+        "armor": 0,
+        "energy": 500,
+        "recharge": 10.0,
+        "armor_damage": 0,
+        "shield_damage": 0
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "name": "spirit",
+    "ship_class": "destroyer",
+    "base_shield": 10000,
+    "base_shield_regen": 336,
+    "base_armor": 28000,
+    "base_cpu": 200,
+    "base_energy": 6000,
+    "base_energy_regen": 50,
+    "base_speed_move": 3.9,
+    "base_speed_turn": 7.8,
+    "base_weapons": 4,
+    "base_fittings": 4,
+    "base_riggings": 0,
+    "base_cells": 1,
+    "base_bonuses": {
+        "Impact Damage": 105.0,
+        "Energy Damage": 105.0,
+        "Explosive Damage": 105.0,
+        "Repair Strength": 0.0,
+        "Impact Range": 105.0,
+        "Energy Range": 105.0,
+        "Explosive Range": 105.0
+    },
+    "shield_increment": 1000,
+    "regen_increment": 16,
+    "armor_increment": 3000,
+    "cpu_increment": 10,
+    "bonus_increment": 2.0
+}

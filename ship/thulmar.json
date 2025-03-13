@@ -1,0 +1,26 @@
+{
+    "name": "Thulmar",
+    "ship_class": "Battleship",
+    "base_shield": 40000,
+    "base_shield_regen": 240,
+    "base_armor": 120000,
+    "base_cpu": 450,
+    "base_energy": 5000,
+    "base_energy_regen": 40,
+    "base_speed_move": 2.7,
+    "base_speed_turn": 4.8,
+    "base_weapons": 3,
+    "base_fittings": 3,
+    "base_riggings": 0,
+    "base_cells": 1,
+    "base_bonuses": {
+        "Impact Damage": 110,
+        "Energy Damage": 110,
+        "Explosive Damage": 110
+    },
+    "shield_increment": 4000,
+    "regen_increment": 12,
+    "armor_increment": 12000,
+    "cpu_increment": 25,
+    "bonus_increment": 5
+}

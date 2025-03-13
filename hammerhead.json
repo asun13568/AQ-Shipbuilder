@@ -1,0 +1,30 @@
+{
+    "name": "NN",
+    "ship_class": "battleship",
+    "base_shield": 35000,
+    "base_shield_regen": 240,
+    "base_armor": 90000,
+    "base_cpu": 450,
+    "base_energy": 5000,
+    "base_energy_regen": 40,
+    "base_speed_move": 2.5,
+    "base_speed_turn": 4.2,
+    "base_weapons": 3,
+    "base_fittings": 5,
+    "base_riggings": 0,
+    "base_cells": 1,
+    "base_bonuses": {
+        "Impact Damage": 110.0,
+        "Energy Damage": 110.0,
+        "Explosive Damage": 110.0,
+        "Repair Strength": 0.0,
+        "Impact Range": 0.0,
+        "Energy Range": 0.0,
+        "Explosive Range": 0.0
+    },
+    "shield_increment": 3500,
+    "regen_increment": 12,
+    "armor_increment": 9000,
+    "cpu_increment": 25,
+    "bonus_increment": 5.0
+}

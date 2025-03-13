@@ -1,0 +1,30 @@
+{
+    "name": "liberator",
+    "ship_class": "destroyer",
+    "base_shield": 14000,
+    "base_shield_regen": 168,
+    "base_armor": 28000,
+    "base_cpu": 200,
+    "base_energy": 6000,
+    "base_energy_regen": 50,
+    "base_speed_move": 3.4,
+    "base_speed_turn": 7.9,
+    "base_weapons": 3,
+    "base_fittings": 4,
+    "base_riggings": 0,
+    "base_cells": 1,
+    "base_bonuses": {
+        "Impact Damage": 80.0,
+        "Energy Damage": 125.0,
+        "Explosive Damage": 80.0,
+        "Repair Strength": 0.0,
+        "Impact Range": 105.0,
+        "Energy Range": 105.0,
+        "Explosive Range": 105.0
+    },
+    "shield_increment": 1500,
+    "regen_increment": 8,
+    "armor_increment": 3000,
+    "cpu_increment": 10,
+    "bonus_increment": 0.0
+}

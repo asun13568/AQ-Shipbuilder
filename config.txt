@@ -1,0 +1,7 @@
+# Lines starting with '#' are comments and will be ignored
+# Key-value pairs, one per line:
+
+image_path = ss/ship/hammerhead_screenshot.png
+mode = ship
+tab = active
+output = hammerhead.json
