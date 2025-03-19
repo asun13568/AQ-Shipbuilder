@@ -11,7 +11,7 @@ running = True  # Variable to stop the bot
 def locate_image_with_opencv(image_path):
     """
     Function to locate the image using OpenCV and return the position.
-    This version supports multiple scales.
+    This version supports multiple scales and provides visual feedback.
     """
     # Take a screenshot of the entire screen
     screenshot = pyautogui.screenshot()
@@ -23,6 +23,9 @@ def locate_image_with_opencv(image_path):
 
     # Test the template at multiple scales
     scales = [1.0, 0.8, 0.6]  # Scaling factors
+    best_match = None
+    max_match_val = 0
+
     for scale in scales:
         # Scale the template
         scaled_template = cv2.resize(template, None, fx=scale, fy=scale, interpolation=cv2.INTER_LINEAR)
@@ -31,18 +34,27 @@ def locate_image_with_opencv(image_path):
 
         # Show the result to visually check
         print(f"Maximum match at scale {scale}: {max_val}")
+        if max_val > max_match_val:
+            max_match_val = max_val
+            best_match = max_loc
+            best_scale = scale
+
         if max_val > 0.3:  # 30% match to consider the image found
             # Draw a rectangle around the found image
             h, w = scaled_template.shape[:2]
             cv2.rectangle(screenshot, max_loc, (max_loc[0] + w, max_loc[1] + h), (0, 255, 0), 2)
-            
-            # Show the image (for testing purposes)
-            cv2.imshow(f"Found Image at scale {scale}", screenshot)
-            cv2.waitKey(0)
-            cv2.destroyAllWindows()
 
-            return max_loc
-    
+    # Visual feedback for the best match
+    if best_match and max_match_val > 0.3:
+        # Show the image with the marked rectangle
+        h, w = template.shape[:2]
+        cv2.rectangle(screenshot, best_match, (best_match[0] + w, best_match[1] + h), (0, 255, 0), 2)
+        cv2.imshow("Matched Image", screenshot)
+        cv2.waitKey(0)
+        cv2.destroyAllWindows()
+
+        return best_match
+
     return None
 
 def activate_anti_missile_laser():
@@ -54,7 +66,7 @@ def activate_anti_missile_laser():
         if laser_button:
             # Click on the found laser button
             laser_center = (laser_button[0] + 50, laser_button[1] + 50)  # Set an offset for the click
-            pyautogui.click(laser_center)
+            pyautogui.click(laser_center)  # Perform the click
             print("✅ AML activated!")
         else:
             print("⚠️ AML not found!")
@@ -75,3 +87,4 @@ keyboard.wait("q")
 stop_bot()
 bot_thread.join()  # Wait for the bot thread to finish
 print("✅ Bot successfully stopped!")
+
