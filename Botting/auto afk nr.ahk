@@ -10,29 +10,27 @@ GameTitle := "AQ: First Contact"   ; Partial or exact title of your game window
 
 ; Coordinates for the "health text" region (where red text appears)
 ; These are relative to the window *client* area (if using CoordMode, Pixel, Window).
-healthX1 := 1120
-healthY1 := 400
-healthX2 := 1120
-healthY2 := 470
-healthX3 := 1120
-healthY3 := 510
+healthX1 := 1111
+healthY1 := 390
+healthX2 := 1140
+healthY2 := 490
 
 ; Coordinates for the bottom-left button region (to check if it's "solid")
-buttonX1 := 30
-buttonY1 := 670
-buttonX2 := 120
-buttonY2 := 700
+buttonX1 := 525
+buttonY1 := 750
+buttonX2 := 565
+buttonY2 := 790
 
 ; The coordinate to click on that button
-clickX := 50
-clickY := 685
+clickX := 545
+clickY := 770
 
 ; How often (ms) to check
 CheckInterval := 2000
 
 ; The color we consider "red" for the text. 
 ; AutoHotkey uses 0xBBGGRR in hex. "0xFF0000" means pure red in RGB.
-healthColor := 0xEE1616
+healthColor := 0xFE1010
 
 ; The color we consider "solid grey" for the button.
 solidGrey := 0x353535
@@ -46,7 +44,7 @@ greyVariation := 10
 ; ------------------------------------------------
 ; We'll assume "Window" coordinates so that you can reposition the game window
 ; without having to recalculate the entire screen-based coordinates.
-CoordMode, Pixel, Window
+CoordMode, pixel, client
 
 ; ------------------------------------------------
 ; 3) Main Loop
